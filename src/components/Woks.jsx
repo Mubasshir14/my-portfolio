@@ -23,6 +23,7 @@ export const Woks = () => {
 
                 <span className='text-2xl font-bold text-white tracking-wider'></span>
                 <div className='pt-8 text-center'>
+                <a target="_blank" href="https://simple-e-commerse-website.netlify.app/"><button className='text-cen4 rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>E-COMMERCE WEBSITE WITH REACT.JS</button></a>
                     <a href="/"><button className='text-cen4 rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Live</button></a>
 
                 </div>
@@ -37,6 +38,7 @@ export const Woks = () => {
 
                 <span className='text-2xl font-bold text-white tracking-wider'></span>
                 <div className='pt-8 text-center'>
+                <a target="_blank" href="https://simple-e-commerse-website.netlify.app/"><button className='text-cen4 rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>E-COMMERCE WEBSITE WITH REACT.JS</button></a>
                     <a href="/"><button className='text-cen4 rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Live</button></a>
 
                 </div>
@@ -51,6 +53,7 @@ export const Woks = () => {
 
                 <span className='text-2xl font-bold text-white tracking-wider'></span>
                 <div className='pt-8 text-center'>
+                <a target="_blank" href="https://simple-e-commerse-website.netlify.app/"><button className='text-cen4 rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>E-COMMERCE WEBSITE WITH REACT.JS</button></a>
                     <a target="_blank" href="https://simple-e-commerse-website.netlify.app/"><button className='text-cen4 rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Live</button></a>
 
                 </div>

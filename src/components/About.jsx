@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
-import about from '../assets/about.jpg'
+import about from '../assets/d.png'
+// import about from '../assets/about.jpg'
 
 export const About = () => {
   return (

@@ -6,30 +6,30 @@ import react from '../assets/react.png';
 
 const Skills = () => {
   return (
-    <div className='bg-black border border-gray-600 text-gray-400 md:h-[150px] max-w-[1200px] mx-auto grid grid-cols-3 place-items-center md:flex md:justify-between md:items-center'>
+    <div id='skill' className='bg-black border border-gray-600 text-gray-400 md:h-[150px] max-w-[1200px] mx-auto grid grid-cols-3 place-items-center md:flex md:justify-between md:items-center md:mt-20 md:mb-20'>
 
 
         <h2 className='text-gray-700 text-xl md:text-4xl font-bold m-4'>My <br /> Teach <br /> Skill</h2>
 
 
-        <div className='flex flex-col items-center m-4 sm:my-0 w-[40px] md:w-[100px'>
-            <img src={html} alt="" />
+        <div className='flex flex-col items-center m-4 sm:my-0 w-[40px] md:w-[100px] '>
+            <img src={html} alt="" className='hover:scale-105 hover:transform  hover:translate-all' />
             <p className='mt-2'>HTML</p>
         </div>
-        <div className='flex flex-col items-center m-4 sm:my-0 w-[40px] md:w-[100px'>
-            <img src={css} alt="" width={100} height={100} />
+        <div className='flex flex-col items-center m-4 sm:my-0 w-[40px] md:w-[100px]'>
+            <img src={css} alt="" width={100} height={100} className='hover:scale-105 hover:transform  hover:translate-all' />
             <p className='mt-2'>CSS</p>
         </div>
-        <div className='flex flex-col items-center m-4 sm:my-0 w-[40px] md:w-[100px'>
-            <img src={javascript} alt="" width={100} height={100} />
+        <div className='flex flex-col items-center m-4 sm:my-0 w-[40px] md:w-[100px]'>
+            <img src={javascript} alt="" width={100} height={100} className='hover:scale-105 hover:transform  hover:translate-all' />
             <p className='mt-2'>JavascriptL</p>
         </div>
-        <div className='flex flex-col items-center m-4 sm:my-0 w-[40px] md:w-[100px'>
-            <img src={tailwind} alt="" width={100} height={100} />
+        <div className='flex flex-col items-center m-4 sm:my-0 w-[40px] md:w-[100px]'>
+            <img src={tailwind} alt="" width={100} height={100} className='hover:scale-105 hover:transform  hover:translate-all' />
             <p className='mt-2'>Tailwind</p>
         </div>
-        <div className='flex flex-col items-center m-4 sm:my-0 w-[40px] md:w-[100px'>
-            <img src={react} alt="" width={100} height={100}/>
+        <div className='flex flex-col items-center m-4 sm:my-0 w-[40px] md:w-[100px]'>
+            <img src={react} alt="" width={100} height={100} className='hover:scale-105 hover:transform  hover:translate-all'/>
             <p className='mt-2'>React</p>
         </div>
     </div>
