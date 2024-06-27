@@ -7,7 +7,7 @@ export const Footer = () => {
                 <div className="container px-6 py-8 mx-auto">
                     <div className="flex flex-col items-center text-center">
 
-                        <span className="text-2xl font-bold primary-color mb-4 sm:mb-0 hover:scale-105 hover:transition-all ease-in-out">Mubasshir</span>
+                        <span className="text-2xl font-bold primary-color mb-4 sm:mb-0 hover:scale-105 hover:transition-all ease-in-out font-cinzel">Mubasshir</span>
 
 
                         <div className="flex flex-wrap justify-center mt-6 -mx-4">
