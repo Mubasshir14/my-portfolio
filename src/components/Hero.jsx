@@ -1,13 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
-// import heroimage from '../assets/mm.jpg'
-import heroimage from '../assets/image.png'
-// import heroimage from '../assets/profilepic7.png'
-// import heroimage from '../assets/processed.png'
-import { TypeAnimation } from 'react-type-animation'
+import heroimage from '../assets/image.png';
+import { TypeAnimation } from 'react-type-animation';
 
 export const Hero = () => {
     return (
-        <div className='grid  grid-cols-1 sm:grid-cols-3 gap-8 max-w-[1200px] mx-auto py-8 bg-black'>
+        <div className='grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-[1200px] mx-auto py-8 bg-black'>
             <div className='mx-auto my-auto w-[300px] h-auto lg:w-[400px] block md:hidden'>
                 <img src={heroimage} alt="Profile" />
             </div>
@@ -25,11 +22,10 @@ export const Hero = () => {
                         speed={50}
                         repeat={Infinity} />
                 </h1>
-                {/* <p className='text-white sm:text-lg my-6 lg:text-xl'>My name is Mubasshir and I have 1+ year experience in web development</p> */}
                 <div className='my-8'>
                     <a
                         className='px-6 py-3 w-full rounded-xl mr-4 bg-gradient-to-br from-orange-500 to-pink-500 text-white'
-                        href="/Mubasshir_CV.pdf"
+                        href="https://drive.google.com/uc?export=download&id=1IYAEkZ6OzgcABwzA1ChwaFfRAlkzno6_"
                         download="Mubasshir_CV.pdf">
                         Download CV 
                     </a>
@@ -44,5 +40,5 @@ export const Hero = () => {
                 <img src={heroimage} alt="Profile" />
             </div>
         </div>
-    )
-}
+    );
+};
