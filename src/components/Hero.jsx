@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
-import heroimage from '../assets/mm.jpg'
+// import heroimage from '../assets/mm.jpg'
+import heroimage from '../assets/image.png'
 // import heroimage from '../assets/profilepic7.png'
 // import heroimage from '../assets/processed.png'
 import { TypeAnimation } from 'react-type-animation'

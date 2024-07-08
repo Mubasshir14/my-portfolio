@@ -21,6 +21,7 @@ export const Contact = () => {
                                             type="text"
                                             name="name"
                                             id="name"
+                                            required
                                             placeholder="Your Name"
                                             className="bg-[#161616] w-full px-4 py-4 text-gray-400 placeholder-gray-400 border border-gray-700 rounded-md focus:border-pink-600 hover:bg-[#1c1c1c] hover:border-pink-600"
                                             aria-label="Your Name"
@@ -35,6 +36,7 @@ export const Contact = () => {
                                             type="text"
                                             name="email"
                                             id="name"
+                                            required
                                             placeholder="Your Email"
                                             className="bg-[#161616] w-full px-4 py-4 text-gray-400 placeholder-gray-400 border border-gray-700 rounded-md focus:border-pink-600 hover:bg-[#1c1c1c] hover:border-pink-600"
                                             aria-label="Your Name"
@@ -50,6 +52,7 @@ export const Contact = () => {
                                             rows={4}
                                             type="text"
                                             name="message"
+                                            required
                                             id="message"
                                             placeholder="Your Message"
                                             className="bg-[#161616] w-full px-4 py-4 text-gray-400 placeholder-gray-400 border border-gray-700 rounded-md focus:border-pink-600 hover:bg-[#1c1c1c] hover:border-pink-600"

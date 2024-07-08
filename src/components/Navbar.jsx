@@ -3,8 +3,13 @@ import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
+
     const handleNav = () => {
         setNav(!nav);
+    };
+
+    const handleLinkClick = () => {
+        setNav(false);
     };
 
     return (
@@ -24,10 +29,10 @@ const Navbar = () => {
                 <div className={nav ? 'fixed h-full left-0 top-0 w-[60%] bg-[#202121] ease-in-out duration-500' : 'fixed left-[-100%] ease-in-out duration-500'}>
                     <h1 className="text-3xl font-bold primary-color ml-4 my-4">Mubasshir</h1>
                     <ul className="flex flex-col">
-                        <li className="p-5 border-b border-gray-600"><a href="about">About</a></li>
-                        <li className="p-5 border-b border-gray-600"><a href="work">Project</a></li>
-                        <li className="p-5 border-b border-gray-600"><a href="skill">Skills</a></li>
-                        <li className="p-5"><a href="contact">Contact</a></li>
+                        <li className="p-5 border-b border-gray-600"><a href="#about" onClick={handleLinkClick}>About</a></li>
+                        <li className="p-5 border-b border-gray-600"><a href="#work" onClick={handleLinkClick}>Project</a></li>
+                        <li className="p-5 border-b border-gray-600"><a href="#skill" onClick={handleLinkClick}>Skills</a></li>
+                        <li className="p-5"><a href="#contact" onClick={handleLinkClick}>Contact</a></li>
                     </ul>
                 </div>
             </div>
