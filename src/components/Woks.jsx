@@ -1,15 +1,12 @@
 import proj1 from '../assets/Plant.png';
-import proj2 from '../assets/ArtistryCraft.png';
+import proj2 from '../assets/ar1.png';
 import mos from '../assets/mosaic.png'
 import l from '../assets/limitless.png'
 import g from '../assets/gadget.png'
-// import proj3 from '../assets/proj3.png';
-import three from '../assets/design.png'
+import e from '../assets/eco.png'
 import { useState } from 'react';
 import { FaGithub } from 'react-icons/fa';
-// import proj4 from '../assets/proj4.png';
-// import proj5 from '../assets/proj5.png';
-// import proj6 from '../assets/proj6.png';
+
 
 export const Woks = () => {
     const [isExpanded, setIsExpanded] = useState(false);
@@ -17,6 +14,7 @@ export const Woks = () => {
     const [mosaic, setMosaic] = useState(false);
     const [limit, setLimit] = useState(false);
     const [gadget, setGadget] = useState(false);
+    const [shopp, setShopp] = useState(false);
 
     const text = "Welcome to Plan A Plant 🌱🪴 – your dynamic destination for all things plants! 🚀🌿 Explore our sleek, interactive platform where you can find the perfect plants and gardening tips. Join us and grow your green thumb today!";
 
@@ -27,6 +25,8 @@ export const Woks = () => {
     const lim = "Welcome to Limitless Bangladesh 🌍🏞 – your ultimate guide to exploring top tourist spots! 🚀🗺️ Discover places by division, get travel tips, and explore famous sites with detailed descriptions, images, and maps. Enjoy theme switching, smooth navigation, and a helpful FAQ section. Built with React.js, Node.js, Express.js, and Swiper Slider, this project brings Bangladesh’s wonders to your fingertips. Start your adventure today!";
 
     const gad = "GadgetHome is a comprehensive e-commerce platform designed for tech enthusiasts, offering a seamless shopping experience. Built with React.js on the frontend and MongoDB, Express.js, and Node.js on the backend, it delivers fast, responsive performance. The platform uses SweetAlert for interactive notifications and Swiper Slider for smooth content transitions, enhancing user engagement.With SSLCommerz integration, GadgetHome provides secure payment processing, allowing users to browse, select, and purchase products with confidence. After transactions, users can download detailed payment and order confirmations. The intuitive search and sort features help users find products easily, while the product review functionality allows them to share feedback and make informed choices.GadgetHome also includes a robust admin panel for managing products, updating information, and overseeing user orders, ensuring efficient workflow management and high user satisfaction."
+
+    const eco ="SHOP.P is a comprehensive e-commerce platform designed to deliver a seamless shopping experience for users and powerful management tools for admins. Users can easily search for products, filter by category, price, or alphabetically, view detailed product information, and leave reviews. The platform offers secure payments via Stripe, and users can track their order status from pending to shipped with real-time notifications. Admins can manage products, update order statuses, and oversee admin roles with a dedicated admin panel. Built using React.js for the frontend, Node.js and Express.js for the backend, and MongoDB for the database, SHOP.P incorporates Tailwind CSS for styling, and features libraries like SweetAlert2, Swiper JS, and React Icons for enhanced user interaction"
 
 
     const handleToggle4 = () => {
@@ -47,6 +47,9 @@ export const Woks = () => {
     const handleToggle5 = () => {
         setGadget(!gadget);
     }
+    const handleToggle6 = () => {
+        setShopp(!shopp);
+    }
 
 
     return (
@@ -57,6 +60,74 @@ export const Woks = () => {
             </div>
 
             <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
+
+                {/* ____________- */}
+                <div className='border-2 rounded-lg p-2'>
+                    <div className='transform  transition-transform duration-300 hover:scale-105 overflow-hidden shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto  h-[200px] bg-cover relative'>
+                        <img src={e} alt="" className='' />
+
+                        <div className='opacity-0 group-hover:opacity-90 bg-[gray]/70 absolute inset-0 flex flex-col justify-center items-center'>
+
+                            <span className='text-2xl font-bold text-white tracking-wider'></span>
+                            <div className='pt-8 text-center'>
+                                <a target="_blank" href="https://e-commerce-586e1.web.app"><button className='text-cen4 rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg uppercase'>SHOP.P - Dynamic Ecommerce Website with React.js</button></a>
+                                <a target="_blank" href="https://e-commerce-586e1.web.app"><button className='text-cen4 rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Live</button></a>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    {/*  */}
+                    <div>
+                        <div className=''>
+                            <h1 className=' rounded-lg text-xl  m-2 primary-color font-bold '>SHOP.P </h1>
+                        </div>
+                        <div>
+                            <div className='rounded-lg m-2 mt-0 font-semibold text-lg text-gray-300'>
+                            <div className='rounded-lg m-2 mt-0 font-semibold text-lg text-gray-300'>
+                                <p>
+                                    {shopp ? eco : `${eco.substring(0, 30)}...`}
+                                </p>
+                                <button
+                                    onClick={handleToggle6}
+                                    className='text-blue-500 underline mt-2'
+                                >
+                                    {shopp ? 'Show less' : 'Show more'}
+                                </button>
+                            </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h1 className='text-white font-bold text-xl my-2'>Technology Used</h1>
+                            <div>
+                                <ul className='grid grid-cols-3 text-center gap-2 md:gap-3  text-sm'>
+                                    <li className='bg-gradient-to-br from-orange-500 to-pink-500 p-1 rounded-lg text-gray-300 font-bold'>React.js</li>
+                                    <li className='bg-gradient-to-br from-orange-500 to-pink-500 p-1 rounded-lg text-gray-300 font-bold'>Swiper Slider</li>
+
+                                    <li className='bg-gradient-to-br from-orange-500 to-pink-500 p-1 rounded-lg text-gray-300 font-bold'>Sweetalert2</li>
+                                    {/* <li className='bg-gradient-to-br from-orange-500 to-pink-500 p-1 rounded-lg text-gray-300 font-bold'>React Tabs</li> */}
+                                    <li className='bg-gradient-to-br from-orange-500 to-pink-500 p-1 rounded-lg text-gray-300 font-bold'>Node.js</li>
+                                    <li className='bg-gradient-to-br from-orange-500 to-pink-500 p-1 rounded-lg text-gray-300 font-bold'>Express.js</li>
+                                    <li className='bg-gradient-to-br from-orange-500 to-pink-500 p-1 rounded-lg text-gray-300 font-bold'>MongoDB</li>
+                                    <li className='bg-gradient-to-br from-orange-500 to-pink-500 p-1 rounded-lg text-gray-300 font-bold'>Firebase</li>
+                                    <li className='bg-gradient-to-br from-orange-500 to-pink-500 p-1 rounded-lg text-gray-300 font-bold'>JWT</li>
+                                    <li className='bg-gradient-to-br from-orange-500 to-pink-500 p-1 rounded-lg text-gray-300 font-bold'>STRIPE</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className='flex gap-6  items-center my-2'>
+                            <h1 className='text-xl font-bold text-white'>Link</h1>
+                            <div className='flex items-center gap-6'>
+                                <a target="_blank" href="https://e-commerce-586e1.web.app" className='text-xl text-white'>🔗</a>
+                                <a target="_blank" href="https://github.com/Mubasshir14/ecommerce-shop.p" className='text-white text-xl'><FaGithub /></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
 
                 {/* ----------project number 1---------- */}
                 <div className='border-2 rounded-lg p-2'>
@@ -276,7 +347,7 @@ export const Woks = () => {
                         <div>
                             <div className='rounded-lg m-2 mt-0 font-semibold text-lg text-gray-300'>
                                 <p>
-                                    {mosaic ? mo : `${at.substring(0, 30)}...`}
+                                    {mosaic ? mo : `${mo.substring(0, 30)}...`}
                                 </p>
                                 <button
                                     onClick={handleToggle3}
@@ -365,6 +436,7 @@ export const Woks = () => {
                                     <li className='bg-gradient-to-br from-orange-500 to-pink-500 p-1 rounded-lg text-gray-300 font-bold'>Node.js</li>
                                     <li className='bg-gradient-to-br from-orange-500 to-pink-500 p-1 rounded-lg text-gray-300 font-bold'>Express.js</li>
                                     <li className='bg-gradient-to-br from-orange-500 to-pink-500 p-1 rounded-lg text-gray-300 font-bold'>MongoDB</li>
+                                    <li className='bg-gradient-to-br from-orange-500 to-pink-500 p-1 rounded-lg text-gray-300 font-bold'>Sweetalert</li>
 
                                 </ul>
                             </div>

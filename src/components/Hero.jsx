@@ -25,7 +25,7 @@ export const Hero = () => {
                 <div className='my-8'>
                     <a
                         className='px-6 py-3 w-full rounded-xl mr-4 bg-gradient-to-br from-orange-500 to-pink-500 text-white'
-                        href="https://drive.google.com/uc?export=download&id=1IYAEkZ6OzgcABwzA1ChwaFfRAlkzno6_"
+                        href="https://drive.google.com/uc?export=download&id=1UduC3GnOAeFGbUKqaCT88aEhrZtZ_Lzx"
                         download="Mubasshir_CV.pdf">
                         Download CV 
                     </a>

@@ -1,13 +1,26 @@
-import { FaLinkedin, FaGithub, FaTwitter, FaFacebook, FaInstagram } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaFacebook} from 'react-icons/fa';
 import p from '../assets/p1.png'
+import { FaUpwork } from 'react-icons/fa6';
 export const Footer = () => {
+    const scrollToSection = (id) => {
+        const section = document.querySelector(id);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
     return (
         <div className='max-w-[1200px] mx-auto'>
             <footer className="bg-gray-900 text-white px-4 divide-y">
                 <div className="container mx-auto py-10 space-y-8 lg:space-y-0 grid grid-col1 md:grid-cols-3 justify-around">
                     <div className="flex flex-col items-center lg:items-start">
-                        <a href="#" rel="noopener noreferrer" className="flex items-center space-x-3">
-                            
+                        <a
+                        to="#"
+                        onClick={(e) => {
+                            e.preventDefault();  
+                            scrollToSection('#top');  
+                        }}
+                        href="#top" rel="noopener noreferrer" className="flex items-center space-x-3">
+
                             <span className="text-2xl font-semibold font-cinzel primary-color"><img src={p} alt="" className="w-[200px]" /></span>
                         </a>
                     </div>
@@ -21,6 +34,9 @@ export const Footer = () => {
                     </div>
                     <div className="space-y-3 text-center text-white">
                         <div className="flex justify-center space-x-3">
+                            <a target="_blank" href="https://www.upwork.com/freelancers/~015a30484b93877d28?mp_source=share" rel="noopener noreferrer" title="Upwork" className="text-white text-2xl">
+                                <FaUpwork />
+                            </a>
                             <a target="_blank" href="https://www.linkedin.com/in/mubasshiralkasshaf" rel="noopener noreferrer" title="LinkedIn" className="text-white text-2xl">
                                 <FaLinkedin />
                             </a>
@@ -30,6 +46,7 @@ export const Footer = () => {
                             <a target="_blank" href="https://www.facebook.com/mubasshir.alkasshaf.5?mibextid=ZbWKwL" rel="noopener noreferrer" title="Facebook" className="text-white text-2xl">
                                 <FaFacebook />
                             </a>
+
                             {/* <a target="_blank" href="#" rel="noopener noreferrer" title="Twitter" className="text-white text-2xl">
                                 <FaTwitter />
                             </a>

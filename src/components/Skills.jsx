@@ -20,7 +20,7 @@ const skillsData = [
 
 const Skills = () => {
   return (
-    <div className='my-10'>
+    <div id='skill' className='my-10'>
         <div className="pb-8 text-center">
                 <p className='text-4xl mb-3 font-bold primary-color'>My Tech Skills</p>
                
